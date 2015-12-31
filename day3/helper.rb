@@ -5,7 +5,7 @@ require 'pp'
 
 class Deliverer
   attr_accessor :houses
-  attr_reader :x, :y 
+  attr_reader :x, :y
 
   def initialize
     @x = 0
@@ -17,9 +17,9 @@ class Deliverer
   def deliver(direction)
     case direction
     when '^'
-      @x += 1    
+      @x += 1
     when 'v'
-      @x -= 1 
+      @x -= 1
     when '>'
       @y += 1
     when '<'
@@ -33,7 +33,7 @@ class Deliverer
   def position
     [@x, @y]
   end
-end 
+end
 
 santa = Deliverer.new
 robo = Deliverer.new

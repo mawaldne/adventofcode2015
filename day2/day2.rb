@@ -4,7 +4,7 @@ input = ARGF.read
 total = 0
 ribbon = 0
 input.each_line do |line|
-  l,w,h = line.split('x').map(&:to_i) 
+  l,w,h = line.split('x').map(&:to_i)
   l_w = l * w
   l_h = l * h
   w_h = w * h
@@ -14,6 +14,7 @@ input.each_line do |line|
   shortest = [l, w, h].sort.first(2)
   ribbon += (l*w*h) + shortest.inject(0) { |sum, side| sum + (side * 2) }
 end
+
 puts total
 puts ribbon
 

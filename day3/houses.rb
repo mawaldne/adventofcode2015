@@ -5,12 +5,12 @@ x, y = 0, 0
 
 houses[[x,y]] = 1
 
-ARGF.each_char.each_slice(2) do |santa_direction, robot_direction|
+ARGF.each_char do |direction|
   case direction
   when '^'
-    x += 1    
+    x += 1
   when 'v'
-    x -= 1 
+    x -= 1
   when '>'
     y += 1
   when '<'
