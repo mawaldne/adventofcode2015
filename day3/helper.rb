@@ -1,5 +1,8 @@
 #!/usr/bin/env ruby -w
 
+# To run
+# ./helper.rb input.txt
+
 require 'set'
 require 'pp'
 

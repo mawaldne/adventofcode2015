@@ -1,5 +1,8 @@
 #!/usr/bin/env ruby -w
 
+# To run:
+# ./characters.rb input.txt
+
 total_string = 0
 total_memory = 0
 total_encoded = 0
@@ -14,5 +17,5 @@ ARGF.each_line do |string|
 end
 p total_string - total_memory
 p total_encoded - total_string
-   
+
 

@@ -1,5 +1,8 @@
 #!/usr/bin/env ruby -w
 
+# To run:
+# ./nice_strings.rb input.txt
+
 count = 0
 ARGF.each_line do |line|
   #next unless /(.*[aeiou]){3,}/ =~ line

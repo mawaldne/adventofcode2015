@@ -1,5 +1,7 @@
 # Ruby 2.2.3. Using slice_when method
 
+# To run: ./looksay.rb
+
 def looksay(s)
   s.split('')
   .slice_when {|i,j| i != j }

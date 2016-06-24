@@ -1,5 +1,8 @@
 #!/usr/bin/env ruby -w
 
+# To run:
+# ./lights.rb input.txt
+
 lights = Hash.new(0)
 
 def parse_first_end(instruction)

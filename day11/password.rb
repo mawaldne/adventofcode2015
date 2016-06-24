@@ -10,7 +10,7 @@ def valid?(password)
                          .split('')
                          .each_cons(3)
                          .find {|a| a[1] == a[0].next && a[2] == a[1].next }
- 
+
    # Contains two different overlapping pairs
    return false unless password
                          .split('')
@@ -25,7 +25,7 @@ password = ARGV[0]
 #puts password if valid?(password)
 
 loop do
-   break if valid?(password) 
+   break if valid?(password)
    password = password.next
 end
 p password

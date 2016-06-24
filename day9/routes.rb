@@ -1,4 +1,8 @@
 #!/usr/bin/env ruby -w
+
+# To run:
+# ./routes.rb input.txt
+
 require 'set'
 
 distances = {}

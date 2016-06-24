@@ -1,5 +1,8 @@
 #!/usr/bin/env ruby -w
 
+# To run
+# ./houses.rb input.txt
+
 houses = Hash.new(0)
 x, y = 0, 0
 

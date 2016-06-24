@@ -1,5 +1,8 @@
 #!/usr/bin/env ruby -w
 
+# To run
+# ./day2.rb day2.input
+
 input = ARGF.read
 total = 0
 ribbon = 0
